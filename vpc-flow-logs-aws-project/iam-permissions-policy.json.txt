@@ -1,0 +1,11 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Effect": "Allow",
+    "Action": ["s3:PutObject", "s3:GetBucketAcl"],
+    "Resource": [
+      "arn:aws:s3:::vpc-flow-logs-bucket-YOURACCOUNT/*",
+      "arn:aws:s3:::vpc-flow-logs-bucket-YOURACCOUNT"
+    ]
+  }]
+}
